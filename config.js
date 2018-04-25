@@ -712,6 +712,11 @@ System.config({
       "aurelia-pal",
       "./aurelia-hide-style"
     ],
+    "npm:aurelia-templating-resources@1.1.1/sanitize-html.js": [
+      "aurelia-binding",
+      "aurelia-dependency-injection",
+      "./html-sanitizer"
+    ],
     "npm:aurelia-templating-resources@1.1.1/replaceable.js": [
       "aurelia-dependency-injection",
       "aurelia-templating"
@@ -729,11 +734,6 @@ System.config({
       "aurelia-dependency-injection",
       "aurelia-path",
       "aurelia-pal"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/sanitize-html.js": [
-      "aurelia-binding",
-      "aurelia-dependency-injection",
-      "./html-sanitizer"
     ],
     "npm:aurelia-templating-resources@1.1.1/attr-binding-behavior.js": [
       "aurelia-binding"
@@ -1201,11 +1201,11 @@ System.config({
     "npm:es5-ext@0.10.42/object/set-prototype-of.js": [
       "./set-prototype-of/index"
     ],
-    "npm:es5-ext@0.10.42/object/valid-value.js": [
-      "./is-value"
-    ],
     "npm:es5-ext@0.10.42/object/valid-object.js": [
       "./is-object"
+    ],
+    "npm:es5-ext@0.10.42/object/valid-value.js": [
+      "./is-value"
     ],
     "npm:d@1.0.0.js": [
       "npm:d@1.0.0/index"
@@ -1255,11 +1255,11 @@ System.config({
       "./is-implemented",
       "./shim"
     ],
-    "npm:es5-ext@0.10.42/object/is-value.js": [
-      "../function/noop"
-    ],
     "npm:es5-ext@0.10.42/object/is-object.js": [
       "./is-value"
+    ],
+    "npm:es5-ext@0.10.42/object/is-value.js": [
+      "../function/noop"
     ],
     "npm:es6-symbol@3.1.1/index.js": [
       "./is-implemented",
@@ -1518,7 +1518,7 @@ System.config({
       "npm:aurelia-templating@1.1.1.js",
       "npm:aurelia-templating@1.1.1/aurelia-templating.js"
     ],
-    "app-build-c992372a4b.js": [
+    "app-build-c55becfcd9.js": [
       "components/editor.js",
       "components/minimapA.js",
       "components/minimapB.js",
