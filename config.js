@@ -691,14 +691,14 @@ System.config({
       "aurelia-templating",
       "aurelia-pal"
     ],
-    "npm:aurelia-templating-resources@1.1.1/if.js": [
-      "aurelia-templating",
-      "aurelia-dependency-injection"
-    ],
     "npm:aurelia-templating-resources@1.1.1/with.js": [
       "aurelia-dependency-injection",
       "aurelia-templating",
       "aurelia-binding"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/if.js": [
+      "aurelia-templating",
+      "aurelia-dependency-injection"
     ],
     "npm:aurelia-templating-resources@1.1.1/show.js": [
       "aurelia-dependency-injection",
@@ -1116,11 +1116,11 @@ System.config({
       "./definition",
       "assert"
     ],
-    "npm:es6-weak-map@2.0.2.js": [
-      "npm:es6-weak-map@2.0.2/index"
-    ],
     "github:jspm/nodelibs-assert@0.1.0/index.js": [
       "assert"
+    ],
+    "npm:es6-weak-map@2.0.2.js": [
+      "npm:es6-weak-map@2.0.2/index"
     ],
     "npm:esrecurse@4.2.1.js": [
       "npm:esrecurse@4.2.1/esrecurse.js"
@@ -1135,12 +1135,12 @@ System.config({
       "estraverse",
       "esrecurse"
     ],
+    "npm:assert@1.4.1.js": [
+      "npm:assert@1.4.1/assert.js"
+    ],
     "npm:es6-weak-map@2.0.2/index.js": [
       "./is-implemented",
       "./polyfill"
-    ],
-    "npm:assert@1.4.1.js": [
-      "npm:assert@1.4.1/assert.js"
     ],
     "npm:es6-map@0.1.5/index.js": [
       "./is-implemented",
@@ -1149,6 +1149,10 @@ System.config({
     "npm:esrecurse@4.2.1/esrecurse.js": [
       "estraverse",
       "./package.json!systemjs-json"
+    ],
+    "npm:assert@1.4.1/assert.js": [
+      "util",
+      "buffer"
     ],
     "npm:es6-weak-map@2.0.2/polyfill.js": [
       "es5-ext/object/set-prototype-of",
@@ -1160,10 +1164,6 @@ System.config({
       "es6-iterator/for-of",
       "es6-symbol",
       "./is-native-implemented"
-    ],
-    "npm:assert@1.4.1/assert.js": [
-      "util",
-      "buffer"
     ],
     "github:jspm/nodelibs-buffer@0.1.1.js": [
       "github:jspm/nodelibs-buffer@0.1.1/index"
@@ -1198,6 +1198,9 @@ System.config({
       "./lib/iterator",
       "./is-native-implemented"
     ],
+    "npm:util@0.10.3.js": [
+      "npm:util@0.10.3/util.js"
+    ],
     "npm:es5-ext@0.10.42/object/set-prototype-of.js": [
       "./set-prototype-of/index"
     ],
@@ -1227,15 +1230,12 @@ System.config({
       "es5-ext/string/is-string",
       "./get"
     ],
-    "npm:util@0.10.3.js": [
-      "npm:util@0.10.3/util.js"
-    ],
-    "npm:es5-ext@0.10.42/array/#/clear.js": [
-      "../../object/valid-value"
-    ],
     "npm:es5-ext@0.10.42/array/#/e-index-of.js": [
       "../../number/is-nan/index",
       "../../number/to-pos-integer",
+      "../../object/valid-value"
+    ],
+    "npm:es5-ext@0.10.42/array/#/clear.js": [
       "../../object/valid-value"
     ],
     "npm:event-emitter@0.3.5.js": [
@@ -1518,7 +1518,7 @@ System.config({
       "npm:aurelia-templating@1.1.1.js",
       "npm:aurelia-templating@1.1.1/aurelia-templating.js"
     ],
-    "app-build-c55becfcd9.js": [
+    "app-build-20124d61ca.js": [
       "components/editor.js",
       "components/minimapA.js",
       "components/minimapB.js",
