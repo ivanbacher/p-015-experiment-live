@@ -492,6 +492,12 @@ System.config({
     }
   },
   depCache: {
+    "main.js": [
+      "aurelia-framework",
+      "aurelia-logging-console",
+      "bootstrap",
+      "bootstrap/dist/css/bootstrap.min.css!"
+    ],
     "github:github/fetch@1.0.0.js": [
       "github:github/fetch@1.0.0/fetch.js"
     ],
@@ -685,6 +691,10 @@ System.config({
     "npm:aurelia-templating-resources@1.1.1/aurelia-hide-style.js": [
       "aurelia-pal"
     ],
+    "npm:aurelia-templating-resources@1.1.1/if.js": [
+      "aurelia-templating",
+      "aurelia-dependency-injection"
+    ],
     "npm:aurelia-templating-resources@1.1.1/compose.js": [
       "aurelia-dependency-injection",
       "aurelia-task-queue",
@@ -695,10 +705,6 @@ System.config({
       "aurelia-dependency-injection",
       "aurelia-templating",
       "aurelia-binding"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/if.js": [
-      "aurelia-templating",
-      "aurelia-dependency-injection"
     ],
     "npm:aurelia-templating-resources@1.1.1/show.js": [
       "aurelia-dependency-injection",
@@ -828,156 +834,6 @@ System.config({
       "aurelia-path",
       "aurelia-pal",
       "aurelia-logging"
-    ],
-    "components/editor.js": [
-      "aurelia-framework",
-      "aurelia-event-aggregator",
-      "../services/log",
-      "d3",
-      "CodeMirror",
-      "CodeMirror/mode/javascript/javascript.js",
-      "CodeMirror/lib/codemirror.css!css",
-      "CodeMirror/addon/fold/foldcode.js",
-      "CodeMirror/addon/fold/foldgutter.js",
-      "CodeMirror/addon/fold/brace-fold.js",
-      "CodeMirror/addon/fold/foldgutter.css!css",
-      "CodeMirror/addon/search/search.js",
-      "CodeMirror/addon/search/searchcursor.js",
-      "CodeMirror/addon/search/jump-to-line.js",
-      "CodeMirror/addon/dialog/dialog.js",
-      "CodeMirror/addon/dialog/dialog.css!css"
-    ],
-    "components/minimapA.js": [
-      "aurelia-framework",
-      "aurelia-event-aggregator",
-      "../services/log",
-      "../services/parser.js",
-      "jquery",
-      "d3",
-      "../helpers/minimap_helper.js"
-    ],
-    "components/minimapB.js": [
-      "aurelia-framework",
-      "aurelia-event-aggregator",
-      "../services/log",
-      "../services/parser.js",
-      "jquery",
-      "d3",
-      "../helpers/minimap_helper.js"
-    ],
-    "main.js": [
-      "aurelia-framework",
-      "aurelia-logging-console",
-      "bootstrap",
-      "bootstrap/dist/css/bootstrap.min.css!"
-    ],
-    "questions/questions.js": [
-      "./questions_file0.js",
-      "./questions_file1.js",
-      "./questions_file2.js",
-      "./questions_file3.js",
-      "./questions_file4.js"
-    ],
-    "services/countdown.js": [
-      "d3"
-    ],
-    "services/info_manager.js": [
-      "aurelia-framework",
-      "aurelia-fetch-client",
-      "../services/log",
-      "../helpers/questions.js",
-      "./fp.js",
-      "jquery"
-    ],
-    "services/log.js": [
-      "aurelia-framework"
-    ],
-    "services/mouse_capturer.js": [
-      "jquery"
-    ],
-    "services/parser.js": [
-      "esprima",
-      "escope",
-      "escodegen"
-    ],
-    "views/app.js": [
-      "aurelia-framework",
-      "aurelia-event-aggregator",
-      "../services/log"
-    ],
-    "views/mobile.js": [
-      "aurelia-framework",
-      "aurelia-router"
-    ],
-    "views/step_01.js": [
-      "aurelia-framework",
-      "aurelia-router",
-      "../services/log",
-      "../services/info_manager.js",
-      "../services/onego.js",
-      "../services/isMobile.js",
-      "jquery"
-    ],
-    "views/step_02.js": [
-      "aurelia-framework",
-      "aurelia-router",
-      "aurelia-event-aggregator",
-      "../services/log",
-      "../services/info_manager.js",
-      "../services/onego.js",
-      "jquery"
-    ],
-    "views/step_04.js": [
-      "aurelia-framework",
-      "aurelia-router",
-      "aurelia-event-aggregator",
-      "../services/log",
-      "../services/info_manager.js",
-      "../services/onego.js",
-      "jquery"
-    ],
-    "views/step_05.js": [
-      "aurelia-framework",
-      "aurelia-router",
-      "aurelia-event-aggregator",
-      "../services/log",
-      "../services/onego.js"
-    ],
-    "views/treatments/A/step.js": [
-      "aurelia-framework",
-      "aurelia-router",
-      "aurelia-event-aggregator",
-      "../../../services/log",
-      "../../../services/countdown.js",
-      "../../../services/info_manager.js",
-      "../../../services/onego.js",
-      "jquery",
-      "../../../questions/questions.js",
-      "../../../tutorial/tutorial_A.js",
-      "../../../../data/experiment_code/file0.js!text",
-      "../../../../data/experiment_code/file1.js!text",
-      "../../../../data/experiment_code/file2.js!text",
-      "../../../../data/experiment_code/file3.js!text",
-      "../../../../data/experiment_code/file4.js!text",
-      "../../../services/mouse_capturer.js"
-    ],
-    "views/treatments/B/step.js": [
-      "aurelia-framework",
-      "aurelia-router",
-      "aurelia-event-aggregator",
-      "../../../services/log",
-      "../../../services/countdown.js",
-      "../../../services/info_manager.js",
-      "../../../services/onego.js",
-      "jquery",
-      "../../../questions/questions.js",
-      "../../../tutorial/tutorial_B.js",
-      "../../../../data/experiment_code/file0.js!text",
-      "../../../../data/experiment_code/file1.js!text",
-      "../../../../data/experiment_code/file2.js!text",
-      "../../../../data/experiment_code/file3.js!text",
-      "../../../../data/experiment_code/file4.js!text",
-      "../../../services/mouse_capturer.js"
     ],
     "github:systemjs/plugin-json@0.3.0.js": [
       "github:systemjs/plugin-json@0.3.0/json"
@@ -1116,11 +972,11 @@ System.config({
       "./definition",
       "assert"
     ],
-    "github:jspm/nodelibs-assert@0.1.0/index.js": [
-      "assert"
-    ],
     "npm:es6-weak-map@2.0.2.js": [
       "npm:es6-weak-map@2.0.2/index"
+    ],
+    "github:jspm/nodelibs-assert@0.1.0/index.js": [
+      "assert"
     ],
     "npm:esrecurse@4.2.1.js": [
       "npm:esrecurse@4.2.1/esrecurse.js"
@@ -1135,12 +991,12 @@ System.config({
       "estraverse",
       "esrecurse"
     ],
-    "npm:assert@1.4.1.js": [
-      "npm:assert@1.4.1/assert.js"
-    ],
     "npm:es6-weak-map@2.0.2/index.js": [
       "./is-implemented",
       "./polyfill"
+    ],
+    "npm:assert@1.4.1.js": [
+      "npm:assert@1.4.1/assert.js"
     ],
     "npm:es6-map@0.1.5/index.js": [
       "./is-implemented",
@@ -1149,10 +1005,6 @@ System.config({
     "npm:esrecurse@4.2.1/esrecurse.js": [
       "estraverse",
       "./package.json!systemjs-json"
-    ],
-    "npm:assert@1.4.1/assert.js": [
-      "util",
-      "buffer"
     ],
     "npm:es6-weak-map@2.0.2/polyfill.js": [
       "es5-ext/object/set-prototype-of",
@@ -1164,6 +1016,10 @@ System.config({
       "es6-iterator/for-of",
       "es6-symbol",
       "./is-native-implemented"
+    ],
+    "npm:assert@1.4.1/assert.js": [
+      "util",
+      "buffer"
     ],
     "github:jspm/nodelibs-buffer@0.1.1.js": [
       "github:jspm/nodelibs-buffer@0.1.1/index"
@@ -1198,9 +1054,6 @@ System.config({
       "./lib/iterator",
       "./is-native-implemented"
     ],
-    "npm:util@0.10.3.js": [
-      "npm:util@0.10.3/util.js"
-    ],
     "npm:es5-ext@0.10.42/object/set-prototype-of.js": [
       "./set-prototype-of/index"
     ],
@@ -1230,12 +1083,15 @@ System.config({
       "es5-ext/string/is-string",
       "./get"
     ],
+    "npm:util@0.10.3.js": [
+      "npm:util@0.10.3/util.js"
+    ],
+    "npm:es5-ext@0.10.42/array/#/clear.js": [
+      "../../object/valid-value"
+    ],
     "npm:es5-ext@0.10.42/array/#/e-index-of.js": [
       "../../number/is-nan/index",
       "../../number/to-pos-integer",
-      "../../object/valid-value"
-    ],
-    "npm:es5-ext@0.10.42/array/#/clear.js": [
       "../../object/valid-value"
     ],
     "npm:event-emitter@0.3.5.js": [
@@ -1431,6 +1287,11 @@ System.config({
     ]
   },
   bundles: {
+    "app-build-cbcdddf5a4.js": [
+      "main.js",
+      "views/app.html!github:systemjs/plugin-text@0.0.8.js",
+      "views/app.js"
+    ],
     "aurelia-c3e5c026d3.js": [
       "github:github/fetch@1.0.0.js",
       "github:github/fetch@1.0.0/fetch.js",
@@ -1517,55 +1378,6 @@ System.config({
       "npm:aurelia-templating-router@1.0.0/router-view.js",
       "npm:aurelia-templating@1.1.1.js",
       "npm:aurelia-templating@1.1.1/aurelia-templating.js"
-    ],
-    "app-build-20124d61ca.js": [
-      "components/editor.js",
-      "components/minimapA.js",
-      "components/minimapB.js",
-      "helpers/minimap_helper.js",
-      "helpers/questions.js",
-      "main.js",
-      "questions/questions.js",
-      "questions/questions_file0.js",
-      "questions/questions_file1.js",
-      "questions/questions_file2.js",
-      "questions/questions_file3.js",
-      "questions/questions_file4.js",
-      "services/countdown.js",
-      "services/fp.js",
-      "services/info_manager.js",
-      "services/isMobile.js",
-      "services/log.js",
-      "services/mouse_capturer.js",
-      "services/onego.js",
-      "services/parser.js",
-      "tutorial/tutorial_A.js",
-      "tutorial/tutorial_B.js",
-      "views/app.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/app.js",
-      "views/elements/consent.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/elements/questions.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/elements/tutorial.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/mobile.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/mobile.js",
-      "views/modals/a-one.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/modals/a-two.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/modals/b-one.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/modals/b-three.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/modals/b-two.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/modals/scope.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/step_01.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/step_01.js",
-      "views/step_02.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/step_02.js",
-      "views/step_04.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/step_04.js",
-      "views/step_05.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/step_05.js",
-      "views/treatments/A/step.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/treatments/A/step.js",
-      "views/treatments/B/step.html!github:systemjs/plugin-text@0.0.8.js",
-      "views/treatments/B/step.js"
     ],
     "thirdParty-84e73b12c1.js": [
       "github:jspm/nodelibs-assert@0.1.0.js",
